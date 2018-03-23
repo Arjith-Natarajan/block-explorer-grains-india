@@ -27,7 +27,7 @@
             <tr>
                 <td>Received Time</td>
                 <td>
-                    {{timestamp}}
+                    {{timestamp * 1000 | date:'yyyy-MM-dd HH:mm:ss Z' }}
                 </td>
             </tr>
             <tr>
@@ -71,7 +71,7 @@
       <small>- contained in current block</small>
     </h2>
 
-    <div ng-repeat="tx in transactions">
+    <div ng-repeat="tx in transactions" class="table-responsive">
       <table class="table table-striped">
           <tbody>
           <tr>

@@ -32,11 +32,11 @@ angular.module('ethExplorer', ['ngRoute','ui.bootstrap'])
         $rootScope.web3 = web3;
         function sleepFor( sleepDuration ){
             var now = new Date().getTime();
-            while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
+            while(new Date().getTime() < now + sleepDuration){ /* do nothing */ }
         }
         var connected = false;
         if(!web3.isConnected()) {
-            $('#connectwarning').modal({keyboard:false,backdrop:'static'}) 
-            $('#connectwarning').modal('show') 
+            $('#connectwarning').modal({keyboard:false,backdrop:'static'})
+            $('#connectwarning').modal('show')
         }
     });
