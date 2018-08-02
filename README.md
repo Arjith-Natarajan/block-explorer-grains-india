@@ -9,3 +9,4 @@ npm i
 Make sure to have npm & node installed as a pre-requisite
 
 Also start the blockchain network using ganache
+*More Instructions to follow soon*
